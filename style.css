@@ -1,0 +1,99 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+img {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.chatbox {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  text-align: left;
+  height: 300px;
+  overflow-y: auto;
+}
+
+.chat {
+  margin: 0.5rem 0;
+}
+
+.user {
+  text-align: right;
+  color: #555;
+}
+
+.ai {
+  font-weight: bold;
+}
+
+button {
+  margin: 0.5rem;
+  padding: 10px 16px;
+  border: none;
+  background: #3498db;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2980b9;
+}
+
+#micBtn.listening {
+  background: #27ae60;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+:root {
+  --bg: #f4f4f4;
+  --text: #111;
+  --chat-ai: #000;
+  --button-bg: #3498db;
+  --button-hover: #2980b9;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.chat.ai {
+  color: var(--chat-ai);
+}
+
+body.dark {
+  --bg: #121212;
+  --text: #f0f0f0;
+  --chat-ai: #fff;
+  --button-bg: #555;
+  --button-hover: #888;
+}
+
+#darkToggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RoboAI Assistant</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🤖 Meet RoboAI</h1>
+  <img id="robot" src="https://blob.sololearn.com/courses/robot-c.jpg" />
+
+  <div class="chatbox" id="chatbox">
+    <div class="chat ai">Hello! I'm RoboAI. Ask me anything — from weather to images or facts!</div>
+  </div>
+
+  <button onclick="changeDirection('left')">⬅️ Left</button>
+  <button onclick="changeDirection('center')">🔄 Center</button>
+  <button onclick="changeDirection('right')">➡️ Right</button>
+  <button id="micBtn" onclick="toggleListening()">🎤 Start Listening</button>
+  <button id="darkToggle" title="Toggle Dark Mode">🌙</button>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
